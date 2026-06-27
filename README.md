@@ -27,6 +27,14 @@ Install dependency:
 
 pip install cryptography
 
-Run:
+
+Run project:
 
 python main.py
+
+
+## Testing
+
+Run:
+
+python test.py
