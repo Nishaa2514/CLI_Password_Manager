@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+passwords.json
+master.txt
+key.key
+.env
