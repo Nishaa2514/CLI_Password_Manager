@@ -30,3 +30,13 @@ pip install cryptography
 Run:
 
 python main.py
+## Version 1.0 Release
+
+Final integration completed.
+
+Implemented modules:
+- Authentication
+- Encryption
+- Password Storage
+- CLI Menu
+- Testing
