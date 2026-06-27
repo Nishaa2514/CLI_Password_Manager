@@ -29,3 +29,18 @@ view_passwords()
 delete_password("Instagram")
 
 print("Storage Test Completed")
+print("\nTesting encryption with another password")
+
+password2 = "newpassword123"
+
+encrypted2 = encrypt_password(password2)
+
+decrypted2 = decrypt_password(encrypted2)
+
+print("Original:", password2)
+print("Decrypted:", decrypted2)
+
+if password2 == decrypted2:
+    print("Second Encryption Test Passed")
+else:
+    print("Second Test Failed")
