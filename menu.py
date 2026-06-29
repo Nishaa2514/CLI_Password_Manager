@@ -1,77 +1,34 @@
-from storage import (
-    add_password,
-    view_passwords,
-    delete_password
-)
-
-from encryption import (
-    encrypt_password,
-    decrypt_password
-)
-
+from storage import add_password, view_passwords, delete_password
 
 
 def display_menu():
-
     while True:
-
-        print("\n======================")
-        print(" CLI PASSWORD MANAGER ")
-        print("======================")
-
+        print("\nCLI PASSWORD MANAGER")
+        print("====================")
         print("1. Add Password")
         print("2. View Passwords")
         print("3. Delete Password")
         print("4. Exit")
 
-
-        choice = input("\nEnter your choice: ")
-
+        choice = input("Enter your choice: ")
 
         if choice == "1":
-
-            website = input("Enter website: ")
-
+            site = input("Enter site: ")
+            username = input("Enter username: ")
             password = input("Enter password: ")
 
-
-            encrypted = encrypt_password(password)
-
-
-            add_password(
-                website,
-                encrypted.decode()
-            )
-
+            add_password(site, username, password)
 
         elif choice == "2":
-
             view_passwords()
 
-
-
         elif choice == "3":
-
-            website = input(
-                "Enter website to delete: "
-            )
-
-            delete_password(website)
-
-
+            site = input("Enter site to delete: ")
+            delete_password(site)
 
         elif choice == "4":
-
-            print(
-                "Exiting Password Manager..."
-            )
-
+            print("Exiting... Goodbye!")
             break
 
-
-
         else:
-
-            print(
-                "Invalid choice"
-            )
+            print("Invalid choice!")
