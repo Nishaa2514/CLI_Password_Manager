@@ -1,19 +1,13 @@
-
 # CLI Password Manager
 
-## Project Description
+A command-line based password manager built using Python.
 
-A command line password manager developed using Python.
-
-The application securely stores passwords using encryption.
-
-## Features
-
+Features:
 - Master password authentication
-- Password encryption
-- Add passwords
-- View passwords
-- Delete passwords
+- Password encryption using Fernet
+- Secure password storage
+- Add, view, and delete passwords
+- Testing module
 
 ## Technologies Used
 
