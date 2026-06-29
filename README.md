@@ -28,11 +28,15 @@ Run project:
 python main.py
 
 
-## Testing
-
+Testing:
 Run:
-
 python test.py
+
+The test verifies:
+- Encryption
+- Decryption
+- Storage
+- Deletion
 
 # CLI_Password_Manager
 9a5eb63f92d3e5d50684a7485deeb65b06cf706d
