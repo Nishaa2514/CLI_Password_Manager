@@ -2,6 +2,8 @@ from storage import add_password, view_passwords, delete_password
 
 
 def display_menu():
+    print("\nWelcome to CLI Password Manager")
+
     while True:
         print("\nCLI PASSWORD MANAGER")
         print("====================")
@@ -15,7 +17,7 @@ def display_menu():
         if choice == "1":
             site = input("Enter site: ")
             username = input("Enter username: ")
-            password = input("Enter password: ")
+            password = input("Enter password")
 
             add_password(site, username, password)
 
