@@ -45,3 +45,5 @@ def decrypt_password(encrypted_password):
     )
 
     return decrypted_password.decode()
+
+# Generates encryption key and encrypts passwords securely
