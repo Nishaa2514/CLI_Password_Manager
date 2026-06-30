@@ -6,7 +6,7 @@ def display_menu():
 
     while True:
 
-        print("=================")
+        print("===============================")
         
         print("1. Add Password")
         print("2. View Passwords")
