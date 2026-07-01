@@ -2,12 +2,9 @@ from storage import add_password, view_passwords, delete_password
 
 
 def display_menu():
-    print("\nWelcome to CLI Password Manager")
-
     while True:
-
-        print("===============================")
-        
+        print("\nCLI PASSWORD MANAGER")
+        print("====================")
         print("1. Add Password")
         print("2. View Passwords")
         print("3. Delete Password")

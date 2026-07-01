@@ -1,9 +1,10 @@
 import hashlib
-
 MASTER_PASSWORD = "admin123"
 
 def authenticate_user(password):
     return password == MASTER_PASSWORD
+
+
 def create_master_password():
 
     password = input("Create Master Password: ")
